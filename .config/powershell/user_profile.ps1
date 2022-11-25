@@ -6,7 +6,7 @@ Set-Alias g git
 Import-Module Terminal-Icons
 oh-my-posh.exe init pwsh | Invoke-Expression
 function Get-ScriptDirectory { Split-Path $MyInvocation.ScriptName }
-$PROMPT_CONFIG = Join-Path (Get-Scriptdirectory) 'dan.omp.json'
+$PROMPT_CONFIG = Join-Path (Get-Scriptdirectory) 'old.dan.omp.json'
 oh-my-posh --init --shell pwsh --config $PROMPT_CONFIG | Invoke-Expression
 
 # PSReadLine
