@@ -35,7 +35,7 @@
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:white{{ end }}",
             "{{ if gt .Ahead 0 }}p:white{{ end }}"
           ],
-          "background": "p:green",
+          "background": "transparent",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}p:tranparent{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:red{{ end }}",
@@ -163,12 +163,12 @@
   "transient_prompt": {
     "foreground": "#EFB7B7",
     "background": "transparent",
-    "template": "   {{ .Folder }}  "
+    "template": "<#FFF7AE>  </>{{ .Folder }}<#7FC8A9> \u27f6 </>"
   },
   "secondary_prompt": {
-    "foreground": "p:black",
+    "foreground": "#6ECCAF",
     "background": "transparent",
-    "template": "<p:yellow,transparent>\ue0b6</><,p:yellow> > </><p:yellow,transparent>\ue0b0</> "
+    "template": " > "
   },
   "palette": {
     "black": "#262B44",
